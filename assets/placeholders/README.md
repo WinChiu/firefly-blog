@@ -15,6 +15,11 @@ Place your replacement images in this folder with these exact filenames:
 - `footer-glowing-icon.webp`
 - `footer-thanks-icon.webp`
 - `footer-soon-icon.webp`
+- `devlog-topic-blue-tears.webp`
+- `devlog-topic-firefly.webp`
+- `devlog-algorithm-kuramoto-formula.webp`
+- `devlog-algorithm-firefly-pseudocode.webp`
+- `devlog-algorithm-firefly-formula.webp`
 
 The HTML already references these files. Until an image is added, the page shows a visible placeholder box with the expected filename.
 

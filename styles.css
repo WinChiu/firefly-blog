@@ -366,7 +366,7 @@ a {
   display: flex;
   align-items: baseline;
   gap: 18px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .post-header h1 {
@@ -384,12 +384,111 @@ a {
   font-size: 16px;
 }
 
+.post-media-grid {
+  display: grid;
+  width: min(760px, 100%);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  margin-bottom: 34px;
+}
+
+.post-media {
+  margin: 0;
+  min-width: 0;
+}
+
+.post-image {
+  width: 100%;
+  min-height: 210px;
+}
+
+.post-image img {
+  object-fit: cover;
+}
+
+.post-media figcaption {
+  margin-top: 8px;
+  color: rgba(242, 242, 242, 0.72);
+  font-size: 16px;
+  font-style: italic;
+}
+
+.post-media figcaption a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .post-body {
   max-width: 980px;
 }
 
 .post-body p {
   text-align: left;
+}
+
+.algorithm-post {
+  max-width: 1120px;
+}
+
+.research-post {
+  max-width: 1120px;
+}
+
+.algorithm-section {
+  margin: 0 0 36px;
+}
+
+.algorithm-section h2 {
+  margin: 0 0 18px;
+  color: var(--purple);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  text-shadow: 0 0 7px rgba(255, 25, 255, 0.74);
+}
+
+.formula-media {
+  margin: 18px 0 0;
+}
+
+.formula-image {
+  width: min(560px, 100%);
+  min-height: 108px;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+.formula-row {
+  display: grid;
+  grid-template-columns: minmax(240px, 380px) minmax(320px, 540px);
+  align-items: end;
+  gap: 42px;
+}
+
+.formula-media-small .formula-image {
+  min-height: 205px;
+}
+
+.formula-media-wide .formula-image {
+  min-height: 70px;
+}
+
+.formula-media figcaption {
+  display: grid;
+  gap: 2px;
+  margin-top: 8px;
+  color: rgba(242, 242, 242, 0.72);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.research-list {
+  margin: 0 0 0 26px;
+  padding: 0;
+  color: #f1f1f1;
+  font-size: 16px;
+  line-height: 1.45;
+  text-shadow: 0 1px 2px #000, 0 0 2px #000;
 }
 
 .site-footer {
@@ -618,6 +717,16 @@ a {
   .post-header {
     display: grid;
     gap: 6px;
+  }
+
+  .post-media-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .formula-row {
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
 
   .site-footer {
