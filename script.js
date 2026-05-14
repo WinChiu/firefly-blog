@@ -1,8 +1,7 @@
 (function () {
-  const counterKey = "fireflyVisitorCount";
-  const counterUpdatedKey = "fireflyVisitorCountUpdatedAt";
   const digitRepeatCycles = 24;
   const digitStartCycle = 10;
+  const fixedVisitorCount = 128764;
   const logTitles = {
     "1": "Deciding on the topic.",
     "2": "Looking into related algorithm",
@@ -158,19 +157,6 @@
     });
   }
 
-  function getInitialCounterValue() {
-    const stored = Number(window.localStorage.getItem(counterKey));
-    const updatedAt = Number(window.localStorage.getItem(counterUpdatedKey));
-
-    if (Number.isFinite(stored) && stored > 0) {
-      const elapsed = Number.isFinite(updatedAt) ? Date.now() - updatedAt : 0;
-      const catchUp = Math.max(0, Math.min(37, Math.floor(elapsed / 45000)));
-      return stored + catchUp;
-    }
-
-    return Math.floor(120384 + Math.random() * 76000);
-  }
-
   function buildCounter(counter, value) {
     counter.textContent = "";
     counter.setAttribute("aria-live", "off");
@@ -239,24 +225,12 @@
     counter.setAttribute("aria-label", `Visitor count ${digits.join("")}`);
   }
 
-  let visitorValue = getInitialCounterValue();
   const visitorCounters = document.querySelectorAll(".visitor-counter");
 
   visitorCounters.forEach((counter) => {
-    buildCounter(counter, visitorValue);
-    renderCounter(counter, visitorValue);
+    buildCounter(counter, fixedVisitorCount);
+    renderCounter(counter, fixedVisitorCount);
   });
-
-  window.localStorage.setItem(counterKey, String(visitorValue));
-  window.localStorage.setItem(counterUpdatedKey, String(Date.now()));
-
-  window.setInterval(() => {
-    visitorValue += Math.random() < 0.78 ? 1 : 2;
-
-    visitorCounters.forEach((counter) => renderCounter(counter, visitorValue));
-    window.localStorage.setItem(counterKey, String(visitorValue));
-    window.localStorage.setItem(counterUpdatedKey, String(Date.now()));
-  }, 6500);
 
   const postTitle = document.querySelector("[data-post-title]");
   const postDate = document.querySelector("[data-post-date]");
