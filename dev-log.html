@@ -1,96 +1,481 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Firefly CG Lab - Dev Log</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body data-page="dev-log">
-  <div class="site-shell">
-    <aside class="sidebar">
-      <a class="sidebar-logo image-slot" href="index.html" data-placeholder="sidebar-logo.webp">
-        <img src="assets/placeholders/sidebar-logo.webp" alt="Firefly CG Lab logo">
-      </a>
-
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="nav-image image-slot" href="index.html" data-placeholder="nav-project-intro.webp">
-          <img src="assets/placeholders/nav-project-intro.webp" alt="Project Intro">
-          <span class="nav-fallback"><span class="nav-icon">🏠</span>PROJECT INTRO</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Firefly CG Lab - Dev Log</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dev-log">
+    <div class="site-shell">
+      <aside class="sidebar">
+        <a
+          class="sidebar-logo image-slot"
+          href="index.html"
+          data-placeholder="sidebar-logo.webp"
+        >
+          <img
+            src="assets/placeholders/sidebar-logo.webp"
+            alt="Firefly CG Lab logo"
+          />
         </a>
-        <a class="nav-image image-slot active" href="dev-log.html" data-placeholder="nav-dev-log.webp">
-          <img src="assets/placeholders/nav-dev-log.webp" alt="Dev Log">
-          <span class="nav-fallback"><span class="nav-icon">📖</span>DEV LOG</span>
-        </a>
-      </nav>
 
-      <div class="sidebar-spacer" aria-hidden="true"></div>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a
+            class="nav-image image-slot"
+            href="index.html"
+            data-placeholder="nav-project-intro.webp"
+          >
+            <img
+              src="assets/placeholders/nav-project-intro.webp"
+              alt="Project Intro"
+            />
+            <span class="nav-fallback"
+              ><span class="nav-icon">🏠</span>PROJECT INTRO</span
+            >
+          </a>
+          <a
+            class="nav-image image-slot active"
+            href="dev-log.html"
+            data-placeholder="nav-dev-log.webp"
+          >
+            <img src="assets/placeholders/nav-dev-log.webp" alt="Dev Log" />
+            <span class="nav-fallback"
+              ><span class="nav-icon">📖</span>DEV LOG</span
+            >
+          </a>
+          <a
+            class="nav-image image-slot"
+            href="about.html"
+            data-placeholder="nav-about-us.webp"
+          >
+            <img src="assets/placeholders/nav-about-us.webp" alt="About Us" />
+            <span class="nav-fallback"
+              ><span class="nav-icon">👥</span>ABOUT US</span
+            >
+          </a>
+        </nav>
 
-      <figure class="sidebar-scene image-slot" data-placeholder="sidebar-firefly-scene.gif">
-        <img src="assets/placeholders/sidebar-firefly-scene.gif" alt="Firefly night scene">
-      </figure>
+        <div class="sidebar-spacer" aria-hidden="true"></div>
 
-      <div class="visitor-widget">
-        <div class="visitor-title">Visitor Count</div>
-        <div class="visitor-counter" aria-label="Visitor count">0000000</div>
-      </div>
-    </aside>
-
-    <main class="main-stage">
-      <div class="top-fireflies" aria-hidden="true">
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-        <span class="top-firefly image-slot" data-placeholder="top-firefly.webp"><img src="assets/placeholders/top-firefly.webp" alt=""></span>
-      </div>
-
-      <section class="devlog-content">
-        <figure class="computer-photo image-slot" data-placeholder="devlog-computer-photo.gif">
-          <img src="assets/placeholders/devlog-computer-photo.gif" alt="Developer at a computer">
+        <figure
+          class="sidebar-scene image-slot"
+          data-placeholder="sidebar-firefly-scene.gif"
+        >
+          <img
+            src="assets/placeholders/sidebar-firefly-scene.gif"
+            alt="Firefly night scene"
+          />
         </figure>
 
-        <ol class="log-list" aria-label="Development log entries">
-          <li><a href="log-post.html?id=1">Deciding on the topic.</a><time datetime="2024-05-24">May 24, 2024</time></li>
-          <li><a href="log-post.html?id=2">Looking into related algorithm</a><time datetime="2024-05-24">May 24, 2024</time></li>
-          <li><a href="log-post.html?id=3">Research on firefly behaviour</a><time datetime="2024-05-24">May 24, 2024</time></li>
-          <li><a href="log-post.html?id=4">Lorem ipsum nisl pellentesque sapien dui.</a><time datetime="2024-05-24">May 24, 2024</time></li>
-          <li><a href="log-post.html?id=5">Lorem ipsum justo fames laoreet cras in elit.</a><time datetime="2024-05-24">May 24, 2024</time></li>
-          <li><a href="log-post.html?id=6">Lorem ipsum sed maecenas</a><time datetime="2024-05-24">May 24, 2024</time></li>
-        </ol>
-      </section>
-    </main>
-  </div>
+        <div class="visitor-widget">
+          <div class="visitor-title">Visitor Count</div>
+          <div class="visitor-counter" aria-label="Visitor count">0000000</div>
+        </div>
+      </aside>
 
-  <footer class="site-footer">
-    <div><span class="footer-icon image-slot" data-placeholder="footer-glowing-icon.webp"><img src="assets/placeholders/footer-glowing-icon.webp" alt=""></span>GLOWING LIKE A FIREFLY</div>
-    <div><span class="footer-icon image-slot" data-placeholder="footer-thanks-icon.webp"><img src="assets/placeholders/footer-thanks-icon.webp" alt=""></span>THANK YOU FOR VISITING</div>
-    <div><span class="footer-icon image-slot" data-placeholder="footer-soon-icon.webp"><img src="assets/placeholders/footer-soon-icon.webp" alt=""></span>COME BACK SOON</div>
-  </footer>
+      <main class="main-stage">
+        <div class="top-fireflies" aria-hidden="true">
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+          <span
+            class="top-firefly image-slot"
+            data-placeholder="top-firefly.webp"
+            ><img
+              class="wing-frame wing-open"
+              src="assets/placeholders/top-firefly.webp"
+              alt="" /><img
+              class="wing-frame wing-closed"
+              src="assets/placeholders/top-firefly-closed.webp"
+              alt=""
+          /></span>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <section class="devlog-content">
+          <figure
+            class="computer-photo image-slot"
+            data-placeholder="devlog-computer-photo.gif"
+          >
+            <img
+              src="assets/placeholders/devlog-computer-photo.gif"
+              alt="Developer at a computer"
+            />
+          </figure>
+
+          <ol class="log-list" aria-label="Development log entries">
+            <li>
+              <a href="log-post.html?id=1">Deciding on the topic.</a
+              ><time datetime="2024-05-24">Apr 3, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=2">Looking into related algorithm</a
+              ><time datetime="2024-05-24">Apr 14, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=3">Research on firefly behaviour</a
+              ><time datetime="2024-05-24">Apr 14, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=4">Implementation Plan</a
+              ><time datetime="2024-05-24">Apr 14, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=5"
+                >Algorithm Improvement: Kuramoto Model</a
+              ><time datetime="2024-05-24">Apr 30, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=6"
+                >Algorithm Improvement: Firefly Algorithm</a
+              ><time datetime="2024-05-24">Apr 30, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=7">Algorithm Improvement: Boids Model</a
+              ><time datetime="2024-05-24">Apr 30, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=8"
+                >Development Process and Issues: Kuramoto</a
+              ><time datetime="2024-05-24">May 15, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=9"
+                >Development Process and Issues: Firefly Model</a
+              ><time datetime="2024-05-24">May 15, 2026</time>
+            </li>
+            <li>
+              <a href="log-post.html?id=10"
+                >Development Process and Issues: Boids</a
+              ><time datetime="2024-05-24">May 15, 2026</time>
+            </li>
+          </ol>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div>
+        <span
+          class="footer-icon image-slot"
+          data-placeholder="footer-glowing-icon.webp"
+          ><img
+            src="assets/placeholders/footer-glowing-icon.webp"
+            alt="" /></span
+        >GLOWING LIKE A FIREFLY
+      </div>
+      <div>
+        <span
+          class="footer-icon image-slot"
+          data-placeholder="footer-thanks-icon.webp"
+          ><img
+            src="assets/placeholders/footer-thanks-icon.webp"
+            alt="" /></span
+        >THANK YOU FOR VISITING
+      </div>
+      <div>
+        <span
+          class="footer-icon image-slot"
+          data-placeholder="footer-soon-icon.webp"
+          ><img src="assets/placeholders/footer-soon-icon.webp" alt="" /></span
+        >COME BACK SOON
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

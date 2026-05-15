@@ -5,8 +5,10 @@ Place your replacement images in this folder with these exact filenames:
 - `sidebar-logo.webp`
 - `nav-project-intro.webp`
 - `nav-dev-log.webp`
+- `nav-about-us.webp`
 - `sidebar-firefly-scene.gif`
 - `top-firefly.webp`
+- `top-firefly-closed.webp`
 - `hero-logo.webp`
 - `intro-main-photo.webp`
 - `devlog-computer-photo.gif`
@@ -20,6 +22,14 @@ Place your replacement images in this folder with these exact filenames:
 - `devlog-algorithm-kuramoto-formula.webp`
 - `devlog-algorithm-firefly-pseudocode.webp`
 - `devlog-algorithm-firefly-formula.webp`
+- `devlog-improvement-g-function.webp`
+- `devlog-improvement-p-function.webp`
+- `devlog-improvement-final-function.webp`
+- `devlog-developing-kuramoto.webp`
+- `about-win-chiu.webp`
+- `about-yu-shin-liou.webp`
+- `about-ruifeng-zhang.webp`
+- `about-team-gif.gif`
 
 The HTML already references these files. Until an image is added, the page shows a visible placeholder box with the expected filename.
 
