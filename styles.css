@@ -392,7 +392,7 @@ a {
 .intro-content {
   display: grid;
   justify-items: center;
-  padding-top: 42px;
+  padding-top: 18px;
 }
 
 .hero-logo {
@@ -405,6 +405,35 @@ a {
   width: min(470px, 80vw);
   min-height: 345px;
   margin: 0 0 42px;
+}
+
+.intro-unity {
+  width: min(1120px, 100%);
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #231f20;
+  margin-bottom: 26px;
+}
+
+.intro-unity iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.simulator-title {
+  margin: 0 0 26px;
+  color: #f8ff8e;
+  font-family: 'Courier New', monospace;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-shadow:
+    0 0 8px rgba(213, 255, 39, 0.9),
+    0 2px 4px #000;
 }
 
 .intro-copy {
@@ -1008,6 +1037,17 @@ a {
     min-height: 260px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .intro-unity {
+    width: 100%;
+    min-height: 0;
+    margin-bottom: 22px;
+  }
+
+  .simulator-title {
+    margin-bottom: 22px;
+    font-size: 28px;
   }
 
   .intro-copy {

@@ -10,7 +10,7 @@ Place your replacement images in this folder with these exact filenames:
 - `top-firefly.webp`
 - `top-firefly-closed.webp`
 - `hero-logo.webp`
-- `intro-main-photo.webp`
+- `intro-main-photo.gif`
 - `devlog-computer-photo.gif`
 - `pointing-hand.webp`
 - `site-background.webp`
